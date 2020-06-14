@@ -52,18 +52,43 @@ body {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  color: hsl(0, 66%, 38%);
+  animation-name: quay;
+  animation-duration: 2.6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes quay {
+  20% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .cross {
   font-size: 2rem;
   font-weight: bold;
-  color: hsl(0, 66%, 38%);
 }
 .btn-toggle {
   color: #eee;
-  font-size: 3rem;
+  font-size: 6rem;
   position: absolute;
   top: 1rem;
   right: 1.6rem;
+  animation: tien 8s linear 0s infinite;
+}
+@keyframes tien {
+  33% {
+    color: #ffd000;
+  }
+  50% {
+    transform: translateX(-40vw);
+  }
+
+  66% {
+    color: #ab2727;
+  }
 }
 
 @media screen and (min-width: 650px) {
